@@ -15,8 +15,8 @@
 	</bean>
 	<bean id="report" class="com.dgit.ex4.Report">
 		<property name="grade1" value="91"></property>
-		<property name="grade2" value="85"></property>
-		<property name="grade3" value="72"></property>
-		<property name="grade4" value="68"></property>
+		<property name="grade2" value="81"></property>
+		<property name="grade3" value="71"></property>
+		<property name="grade4" value="61"></property>
 	</bean>
 </beans>

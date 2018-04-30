@@ -1,8 +1,6 @@
-package com.dgit.ex1;
+package com.dgit.ex2;
 
 import org.springframework.context.support.GenericXmlApplicationContext;
-
-import com.dgit.ex2.MyPerson;
 
 public class MainClass2 {
 

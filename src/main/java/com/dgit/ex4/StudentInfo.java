@@ -1,5 +1,7 @@
 package com.dgit.ex4;
 
+import com.dgit.ex6.Family;
+
 public class StudentInfo {
 	private String name;
 	private int classGrade;
@@ -7,7 +9,19 @@ public class StudentInfo {
 	private int eng;
 	private int kor;
 	private Report report;
+	private Family family;
+
 	
+	
+	public StudentInfo() {
+		
+	}
+
+	public StudentInfo(Report report, Family family) {
+		this.report = report;
+		this.family = family;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -56,13 +70,18 @@ public class StudentInfo {
 		this.report = report;
 	}
 
-	public void getInfo(){
-		System.out.println("이름 : "+name);
-		System.out.println("학년 : "+classGrade);
-		System.out.println("수학 : "+math);
-		System.out.println("영어 : "+eng);
-		System.out.println("국어 : "+kor);
+	public void getInfo() {
+		System.out.println("이름 : " + name);
+		System.out.println("학년 : " + classGrade);
+		System.out.println("수학 : " + math);
+		System.out.println("영어 : " + eng);
+		System.out.println("국어 : " + kor);
 		report.reportGrade(math, eng, kor);
 		
+		if(family !=null){
+			family.printInfo();
+		}
+		
+		System.out.println("=================================");
 	}
 }

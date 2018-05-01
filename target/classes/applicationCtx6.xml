@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="family" class="com.dgit.ex6.Family">
+		<constructor-arg name="father" value="홍길동 아빠"></constructor-arg>
+		<constructor-arg name="mother" value="홍길동 엄마"></constructor-arg>
+		<property name="sister" value="홍길동 여동생"/>
+	</bean>
+
+	<bean id="studentInfo2" class="com.dgit.ex4.StudentInfo">
+		<constructor-arg name="report" ref="report"/>
+		<constructor-arg name="family" ref="family"/>
+		<property name="name" value="홍길동"/>
+		<property name="classGrade" value="3"/>
+		<property name="math" value="44"/>
+		<property name="kor" value="78"/>
+		<property name="eng" value="92"/>
+	</bean>
+</beans>

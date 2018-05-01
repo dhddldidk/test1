@@ -34,7 +34,9 @@ public class Report {
 	}
 	
 	public void reportGrade(int math, int eng, int kor){
+		
 		double total = (math+eng+kor)/3;
+		System.out.println("평균 : "+total);
 		if(total>grade1){
 			System.out.println("1등급입니다.");
 		}else if(total>grade2){
